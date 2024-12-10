@@ -1,0 +1,16 @@
+To run this project, you need to navigate to the directory where the index.html file is located. 
+Then, open your terminal and enter the following command:
+npm install
+
+After that, you can start the project by running:
+npm run dev
+
+Once the project is running, enter the URL of your localhost in your browser.
+(the default URL is http://localhost:5173/).
+
+
+
+
+Other libraries that I installed while building the project:
+npm install react-router-dom
+npm install react-intersection-observer
