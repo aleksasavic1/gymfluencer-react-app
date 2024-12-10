@@ -1,0 +1,39 @@
+.style-for-steps {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.style-for-steps img {
+    width: 480px;
+}
+
+.steps-div h1 {
+    font-size: 3.7rem;
+}
+.steps-div p {
+    font-size: 1.3rem;
+}
+
+.style-for-steps .image {
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: transform 500ms ease-out, opacity 1s ease-out;
+}
+
+.style-for-steps .steps-div {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 500ms ease-out, opacity 1s ease-out;
+}
+
+.animate-left {
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+}
+
+.animate-right {
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+}

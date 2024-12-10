@@ -1,0 +1,110 @@
+footer {
+    padding: 2rem 4rem;
+    background-image: linear-gradient(to bottom, #ffffff, #4becc9af);
+    box-shadow: 3px 3px 3px black;
+}
+
+
+.top-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-footer img {
+    width: 72px;
+    filter: drop-shadow(2px 2px 2px #000000) grayscale(1);
+    cursor: pointer;
+    margin: 1rem 0;
+
+    
+}
+.top-footer img:hover {
+    filter: drop-shadow(2px 2px 2px #000000) grayscale(0);
+    animation: bounce 400ms ease-out;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+.top-footer .footer-content .left-side div {
+    margin: 1rem 0;
+}
+
+.top-footer .footer-content .left-side div h2 {
+    margin: 0.2rem 0;
+}
+
+footer .top-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.company h2, .services h2, .contacts h2 {
+    margin-bottom: 0.7rem;
+}
+
+.top-footer div ul li {
+    list-style-type: none;
+    margin: 8px 0;
+}
+
+.top-footer div ul li a {
+    text-decoration: none;
+}
+.top-footer div ul li a:hover {
+    color: #126697;
+}
+
+.services-ul {
+    display: flex;
+}
+
+.first-service {
+    margin-right: 4rem;
+}
+
+.top-footer .footer-content .contacts div {
+    margin: 1rem 0;
+}
+.top-footer .footer-content .contacts div h3 {
+    margin-bottom: 0.2rem;
+}
+
+hr {
+    margin: 1.3rem;
+}
+
+.bottom-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-networks a img {
+    filter: grayscale(1);
+    width: 30px;
+    margin: 0 0.4rem;
+    padding: 3px;
+    background-color: transparent;
+    border: 1px solid #4f7c82;
+    border-radius: 50%;
+
+    transition: 200ms ease-in;
+}
+
+.social-networks a img:hover {
+    padding: 0px;
+}

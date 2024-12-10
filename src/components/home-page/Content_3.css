@@ -1,0 +1,15 @@
+#content3 {
+    background-image: url("../../assets/content3.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#content3 h1, #content3 p {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+#content3 img {
+    width: 460px;
+}

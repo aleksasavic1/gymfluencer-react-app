@@ -1,0 +1,110 @@
+.section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    padding-top: 4rem;
+
+    background-image: linear-gradient(to top, #fff, #ebfdfe, #d7fafc, #bff9fc);
+}
+
+.div {
+    display: flex;
+    flex-direction: column;
+    border-radius: 45% 10% 45% 30%;
+    background-image: linear-gradient(45deg, #ff6dff, #afadad);
+    padding: 8rem;
+}
+
+.h1 {
+    font-size: 2.7rem;
+    color: hsl(0, 0%, 20%);
+    margin-bottom: 0.4rem;
+}
+
+.input {
+    color: hsl(0, 0%, 20%);
+    font-size: 1.3rem;
+    min-width: 480px;
+    padding: 1rem;
+    border-radius: 16px;
+    background-color: hsl(0, 0%, 90%);
+    border: none;
+    margin: 0.4rem 0;
+}
+
+.input:focus {
+    outline: none;
+    background-color: hsl(0, 0%, 85%);;
+}
+
+
+.name {
+    position: relative;
+    padding-left: 40px;
+    background-image: url('user.png');
+    background-position: left 8px center;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+}
+
+.email {
+    position: relative;
+    padding-left: 40px;
+    background-image: url('email.png');
+    background-position: left 8px center;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+}
+
+textarea {
+    resize: none;
+    min-height: 140px;
+}
+
+.submit {
+    background-color: #165b72;
+    border: none;
+    padding: 1rem 2rem;
+    color: white;
+    border-radius: 16px;
+    cursor: pointer;
+    margin: 1rem 0 0.6rem 0;
+}
+
+.submit:hover {
+    animation: focused 1s forwards ease-in-out;
+}
+
+@keyframes focused {
+    50% {
+        background-color: #24809e;
+    }
+
+    100% {
+        background-color: #24809e;
+        box-shadow: 0 0 12px hsla(120, 100%, 25%, 0.6);
+    }
+}
+
+.img {
+    width: 600px;
+    height: 480px;
+    animation: jumping 2s ease-in-out infinite;
+}
+
+@keyframes jumping {
+    50% {
+        transform: translateY(-2%);
+    }
+}
+
+
+
+.error {
+    color: #ce1212;
+}
+
+.sent {
+    color: #108b10;
+}

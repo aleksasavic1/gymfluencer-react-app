@@ -1,0 +1,123 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 2rem;
+    align-items: center;
+    background-image: linear-gradient(to right, #f5f3f3, #eaf8fa, #c0fcf5);
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+    box-shadow: 0 1px 4px black;
+}
+
+header h1 a {
+    text-decoration: none;
+    background-image: linear-gradient(to left, #0b0b6d, #808019);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#header-links {
+    display: flex;
+    font-size: 1.1rem;
+}
+
+#header-links li {
+    list-style-type: none;
+    margin: 0 2rem;
+    position: relative;
+}
+
+#header-links li a {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 2px;
+}
+
+#header-links li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #197180;
+    transition: width 0.3s ease;
+}
+
+#header-links li a:hover::before {
+    width: 100%;
+}
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -50%;
+    list-style-type: none;
+    margin: 0;
+    padding: 2rem 0 1rem 0;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, #f5f3f3, #eaf8fa, #abe7b0);
+}
+
+.dropdown-menu li a {
+    padding-bottom: 2px;
+    margin: 8px 2px;
+    white-space: nowrap;
+}
+
+#header-links li:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-arrow {
+    font-size: 16px;
+    margin-left: 4px;
+}
+
+
+
+#header-buttons button {
+    font-size: 1rem;
+    margin: 0 0.4rem;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid hsl(0, 0%, 15%);
+    background-color: transparent;
+    color: hsl(0, 0%, 15%);
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: 400ms ease;
+}
+
+#header-buttons button:hover {
+    border: 1px solid hsl(0, 0%, 15%);
+    background-color: hsl(0, 0%, 15%);
+    color: white;
+}
+
+
+
+#menu {
+    display: none;
+    width: 30px;
+    height: 35px;
+}
+
+@media (max-width: 1292px) {
+    #header-links {
+        display: none;
+    }
+    header h1 {
+        margin-left: 10rem;
+    }
+    #menu {
+        display: block;
+    }
+}

@@ -1,0 +1,74 @@
+.container {
+    position: fixed;
+    bottom: 25px;
+    right: 30px;
+    width: 65px;
+    height: 65px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: bounce 2s ease-out infinite;
+}
+
+.close-button {
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    width: 20px;
+    height: 20px;
+    background-color: #ff3f3f;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.chatbot-icon {
+    width: 120%;
+    height: 120%;
+    background-image: url("chatbot-image.png");
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: rotate 4s ease-out infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
