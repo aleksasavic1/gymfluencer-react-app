@@ -121,3 +121,37 @@ header h1 a {
         display: block;
     }
 }
+
+
+@media (max-width: 870px) {
+    header {
+        padding: 0.6rem 1rem;
+    }
+
+    header > * {
+        zoom: 0.8;
+    }
+}
+
+@media (max-width: 650px) {
+    header > * {
+        zoom: 0.6;
+    }
+}
+
+@media (max-width: 467px) {
+    #header-buttons button {
+        display: none;
+    }
+
+    header {
+        height: 44px;
+    }
+
+    header h1 {
+        margin-left: 0rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

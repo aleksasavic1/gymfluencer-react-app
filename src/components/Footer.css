@@ -108,3 +108,56 @@ hr {
 .social-networks a img:hover {
     padding: 0px;
 }
+
+
+
+@media (max-width: 1228px) {
+    .footer-content {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+
+    .footer-content > * {
+        margin: auto;
+        
+    }
+
+    .company {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .top-footer img {
+        margin: 0 auto 1.7rem auto;
+    }
+}
+
+
+@media (max-width: 678px) {
+    .footer-content {
+        display: grid !important;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        text-align: center;
+    }
+
+    .footer-content > * {
+        margin: 0; 
+    }
+
+    .first-service {
+        margin-right: 0;
+    }
+
+    .services-ul {
+        flex-direction: column;
+    }
+
+    .contacts div {
+        margin: 0 0 16px 0 !important;
+    }
+}

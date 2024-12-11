@@ -108,3 +108,45 @@ textarea {
 .sent {
     color: #108b10;
 }
+
+
+
+@media (max-width: 1612px) {
+    .img {
+        zoom: 0.8;
+
+    }
+
+    .div {
+        zoom: 0.8;
+    }
+}
+
+@media (max-width: 1172px) {
+    .img {
+        zoom: 0.6;
+
+    }
+
+    .div {
+        zoom: 0.6;
+    }
+}
+
+@media (max-width: 884px) {
+    .img {
+        zoom: 0.4;
+
+    }
+
+    .div {
+        zoom: 0.4;
+    }
+}
+
+
+@media (max-width: 642px) {
+    .section {
+        flex-direction: column;
+    }
+}

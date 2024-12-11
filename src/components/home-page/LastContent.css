@@ -1,0 +1,30 @@
+#content5 {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #d8fff6, white);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#content5 div {
+    padding: 10rem;
+    border-radius: 50%;
+    color: white;
+    font-size: 2rem;
+    width: 420px;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    box-shadow: 2px 2px 3px black;
+    transition: 250ms ease-in-out;
+}
+
+#circle1, #circle3 {
+    margin-top: 12rem;
+}
+#circle2 {
+    margin-bottom: 12rem;
+}
