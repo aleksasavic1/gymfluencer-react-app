@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Content from "../components/home-page/content";
-import Content_2 from '../components/home-page/Content_2';
-import Content_3 from '../components/home-page/Content_3';
-import Content_4 from '../components/home-page/Content_4';
-import LastContent from '../components/home-page/LastContent';
+import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.jsx";
+import Content from "../components/home-page/content.jsx";
+import Content_2 from '../components/home-page/Content_2.jsx';
+import Content_3 from '../components/home-page/Content_3.jsx';
+import Content_4 from '../components/home-page/Content_4.jsx';
+import LastContent from '../components/home-page/LastContent.jsx';
 
 function HomePage() {
     const [currentContent, setCurrentContent] = useState(0);
